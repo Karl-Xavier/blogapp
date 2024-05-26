@@ -11,7 +11,7 @@ const BlogItem = ( {blog:{ id, title, description, createdAt, authorName, author
         <Link style={{textDecoration: "none", color: "#000"}} to={`blog/${id}`}>
             <img className='rounded img-fluid' src={cover} alt={title} />
             <div>
-                <h3 style={{fontWeight: "bold"}}>{title}</h3>
+                <h3 style={{fontWeight: "bold", marginTop: "10px"}}>{title}</h3>
                 <p className='description'>{description}</p>
             </div>
             <div className="footer">
