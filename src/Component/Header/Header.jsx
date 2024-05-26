@@ -27,7 +27,7 @@ const Header = () => {
             } catch (error) {
                 console.log("Error Fetching Quotes...", error)
                 setQuote({
-                    content: "Failed to get error",
+                    content: "Failed to get quotes", error,
                     author: ""
                 })
             }
@@ -37,7 +37,7 @@ const Header = () => {
 
         const interval = setInterval(() => {
             getData()
-        }, 3000)
+        }, 5000)
 
         return () => clearInterval(interval)
 
