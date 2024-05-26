@@ -25,10 +25,10 @@ const Header = () => {
                     setFade(false)
                 }, 500)
             } catch (error) {
-                console.log("Error Fetching Quotes...", error)
+                console.error("Error Fetching Quotes...", error)
                 setQuote({
-                    content: "Failed to get quotes", error,
-                    author: ""
+                    content: error.message,
+                    author: " error...."
                 })
             }
         }
@@ -47,8 +47,8 @@ const Header = () => {
         <h1>Blogpost</h1>
         <div className="container rounded quote-box">
             <div className={`quote-container ${fade ? 'fade-out' : ''}`}>
-                <h2>"{quote.content} "</h2>
-                <p>--{quote.author}</p>
+                <h2>" {quote.content} "</h2>
+                <p>-- {quote.author}</p>
             </div>
         </div>
     </header>

@@ -16,7 +16,7 @@ const Blog = () => {
   }, [])
   return (
     <div className='container p-3'>
-        <Link to={'/'} style={{color: "black", textDecoration: "none"}}><ArrowLeft size={28}/>Go Back</Link>
+        <Link to={'/'} style={{color: "black", textDecoration: "none"}}><ArrowLeft size={28}/> Go Back</Link>
         {
           blog ?
           <div>
