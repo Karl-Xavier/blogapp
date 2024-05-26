@@ -1,0 +1,44 @@
+.description
+{
+    position: relative;
+    max-height: 50px;
+    overflow: hidden;
+    font-size: .8rem;
+    padding: .6rem;
+}
+
+.description::before
+{
+    position: absolute;
+    content: "...";
+    bottom: 0;
+    right: 0;
+}
+
+.footer
+{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.footer Link
+{
+    text-decoration: none;
+}
+
+.author
+{
+    display: flex;
+    align-items: center;
+}
+
+.author img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: .5rem;
+}
